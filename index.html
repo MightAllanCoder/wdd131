@@ -1,45 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="WDD 131 - Web Frontend Development Home Page">
-  <title>WDD 131 - Home Page</title>
-  <link rel="stylesheet" href="styles/base.css">
-  <script src="scripts/getdates.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="WDD 131 Dynamic Web Fundamentals home page for Allan Machingura">
+    <meta name="author" content="Allan Machingura">
+
+    <title>WDD 131 – Dynamic Web Fundamentals – Allan Machingura</title>
+
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-  <header>
-    <h1>WDD 131: Web Frontend Development</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Chamber</a></li>
-        <li><a href="#">GitHub Profile</a></li>
-        <li><a href="#">LinkedIn</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <h2>Course Web Development Projects</h2>
-    <section class="card">
-      <h3>About Me</h3>
-      <p>Welcome to my WDD 131 course page. Here you will find projects and assignments completed throughout the course.</p>
-    </section>
-    
-    <section class="card">
-      <h3>Web Resources</h3>
-      <ul>
-        <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
-        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
-      </ul>
-    </section>
-  </main>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
 
-  <footer>
-    <p>&copy; <span id="currentyear2026"></span></p>
-    <p id="lastModified"></p>
-  </footer>
+        <nav>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://byui.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Favorite Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Allan Machingura</h1>
+
+        <div class="cards">
+
+            <section class="card">
+                <h2>About Me</h2>
+
+                <div class="about-content">
+                    <div>
+                        <p>
+                            My name is Allan Machingura. I am from Zimbabwe and I am
+                            currently studying web development. I enjoy learning how
+                            websites work and developing my skills in HTML, CSS, and
+                            JavaScript.
+                        </p>
+
+                        <h3>Zimbabwe</h3>
+
+                        <p>
+                            Zimbabwe is a country in Southern Africa known for its
+                            beautiful landscapes, wildlife, and rich cultural history.
+                        </p>
+                    </div>
+
+                    <img src="images/profile.jpg" alt="Profile photo of Allan Machingura">
+                </div>
+            </section>
+
+
+            <section class="card">
+                <h2>Web Development Resources</h2>
+
+                <ul>
+                    <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                    <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+                    <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
+                </ul>
+            </section>
+
+        </div>
+    </main>
+
+
+    <footer>
+        <p>
+            © <span id="currentyear"></span> Allan Machingura | Zimbabwe
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>

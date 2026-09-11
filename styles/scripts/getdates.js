@@ -1,5 +1,6 @@
-// Dynamically output current copyright year
-document.getElementById("currentyear").textContent = new Date().getFullYear();
+const today = new Date();
 
-// Dynamically output file last modified date
-document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+document.querySelector("#currentyear").textContent = today.getFullYear();
+
+document.querySelector("#lastModified").textContent =
+    `Last Modification: ${document.lastModified}`;
