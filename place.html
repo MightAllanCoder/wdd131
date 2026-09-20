@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Learn about Zimbabwe, including its geography, population, culture, and weather.">
+    <meta name="author" content="Your Name">
+
+    <title>Zimbabwe</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Zimbabwe</h1>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <picture>
+                <source
+                    media="(min-width: 700px)"
+                    srcset="images/zimbabwe-large.webp">
+
+                <img
+                    src="images/zimbabwe-small.webp"
+                    alt="Victoria Falls in Zimbabwe"
+                    width="800"
+                    height="600">
+            </picture>
+        </section>
+
+        <div class="information">
+
+            <section class="card data">
+                <h2>Data</h2>
+
+                <p><strong>Area:</strong> 390,757 sq km</p>
+                <p><strong>Population:</strong> 17 million</p>
+                <p><strong>Capital:</strong> Harare</p>
+                <p><strong>Languages:</strong> English, Shona, Ndebele</p>
+                <p><strong>Currency:</strong> Zimbabwe Gold (ZiG)</p>
+                <p><strong>Time Zone:</strong> UTC+2</p>
+                <p><strong>Calling Code:</strong> +263</p>
+                <p><strong>Internet TLD:</strong> .zw</p>
+            </section>
+
+            <section class="card weather">
+                <h2>Weather</h2>
+
+                <img
+                    class="weather-icon"
+                    src="images/weather.svg"
+                    alt="Partly cloudy weather"
+                    width="60"
+                    height="60">
+
+                <p><strong>Temperature:</strong> 8 °C</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> 12 km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windchill">N/A</span></p>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Zimbabwe</p>
+        <p>Last Modification: <span id="lastModified 20/9/20265:47 pm "></span></p>
+    </footer>
+
+</body>
+</html>

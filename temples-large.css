@@ -1,0 +1,63 @@
+```css
+@media screen and (min-width: 700px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+    }
+
+    #site-title {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    nav a {
+        width: auto;
+        padding: 0.75rem 1rem;
+    }
+
+    main {
+        max-width: 1200px;
+        padding: 2rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    figure img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+    figcaption {
+        min-height: 45px;
+    }
+
+    footer {
+        margin-top: 3rem;
+    }
+}
+```
+
