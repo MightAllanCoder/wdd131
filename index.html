@@ -1,84 +1,121 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="WDD 131 Dynamic Web Fundamentals home page for Allan Machingura">
+    <meta name="description"
+        content="Temple Album featuring temples from around the world.">
+
     <meta name="author" content="Allan Machingura">
 
-    <title>WDD 131 – Dynamic Web Fundamentals – Allan Machingura</title>
+    <title>Temple Album | WDD 131</title>
 
-    <link rel="stylesheet" href="styles/base.css">
-    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    <script src="temples.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <span id="site-title">Temple Album</span>
+
+        <button id="menu" type="button" aria-label="Open navigation menu">
+            ☰
+        </button>
 
         <nav>
-            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-            <a href="https://byui.instructure.com/" target="_blank">Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Favorite Scripture</a>
-            <a href="#">Final Project</a>
+            <a href="#">Home</a>
+            <a href="#">Old</a>
+            <a href="#">New</a>
+            <a href="#">Large</a>
+            <a href="#">Small</a>
         </nav>
     </header>
 
     <main>
-        <h1>Allan Machingura</h1>
+        <h1>Temple Album</h1>
 
-        <div class="cards">
+        <div class="temple-grid">
 
-            <section class="card">
-                <h2>About Me</h2>
+            <figure>
+                <img src="images/harare-zimbabwe-temple.jpg"
+                    alt="Harare Zimbabwe Temple">
+                <figcaption>Harare Zimbabwe Temple</figcaption>
+            </figure>
 
-                <div class="about-content">
-                    <div>
-                        <p>
-                            My name is Allan Machingura. I am from Zimbabwe and I am
-                            currently studying web development. I enjoy learning how
-                            websites work and developing my skills in HTML, CSS, and
-                            JavaScript.
-                        </p>
+            <figure>
+                <img src="images/salt-lake-temple.jpg"
+                    alt="Salt Lake Temple"
+                    loading="lazy">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
 
-                        <h3>Zimbabwe</h3>
+            <figure>
+                <img src="images/accra-ghana-temple.jpg"
+                    alt="Accra Ghana Temple"
+                    loading="lazy">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
 
-                        <p>
-                            Zimbabwe is a country in Southern Africa known for its
-                            beautiful landscapes, wildlife, and rich cultural history.
-                        </p>
-                    </div>
+            <figure>
+                <img src="images/johannesburg-south-africa-temple.jpg"
+                    alt="Johannesburg South Africa Temple"
+                    loading="lazy">
+                <figcaption>Johannesburg South Africa Temple</figcaption>
+            </figure>
 
-                    <img src="images/profile.jpg" alt="Profile photo of Allan Machingura">
-                </div>
-            </section>
+            <figure>
+                <img src="images/nairobi-kenya-temple.jpg"
+                    alt="Nairobi Kenya Temple"
+                    loading="lazy">
+                <figcaption>Nairobi Kenya Temple</figcaption>
+            </figure>
 
+            <figure>
+                <img src="images/london-england-temple.jpg"
+                    alt="London England Temple"
+                    loading="lazy">
+                <figcaption>London England Temple</figcaption>
+            </figure>
 
-            <section class="card">
-                <h2>Web Development Resources</h2>
+            <figure>
+                <img src="images/washington-dc-temple.jpg"
+                    alt="Washington D.C. Temple"
+                    loading="lazy">
+                <figcaption>Washington D.C. Temple</figcaption>
+            </figure>
 
-                <ul>
-                    <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
-                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
-                    <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
-                    <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
-                    <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
-                </ul>
-            </section>
+            <figure>
+                <img src="images/paris-france-temple.jpg"
+                    alt="Paris France Temple"
+                    loading="lazy">
+                <figcaption>Paris France Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/rome-italy-temple.jpg"
+                    alt="Rome Italy Temple"
+                    loading="lazy">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
 
         </div>
     </main>
 
-
     <footer>
         <p>
-            © <span id="currentyear"></span> Allan Machingura | Zimbabwe
+            © <span id="currentyear"></span> Allan Dadirai Machingura | Zimbabwe
         </p>
 
         <p id="lastModified"></p>
     </footer>
 
 </body>
+
 </html>
+```
