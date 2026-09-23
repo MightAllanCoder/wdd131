@@ -1,19 +1,18 @@
 ```css
 @media screen and (min-width: 700px) {
 
-    header {
+    .header-content {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 1rem 2rem;
     }
 
-    #site-title {
-        margin: 0;
-        font-size: 2rem;
+    h1 {
+        text-align: left;
+        font-size: 2.2rem;
     }
 
-    #menu {
+    #menu-button {
         display: none;
     }
 
@@ -22,7 +21,8 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
+        gap: 0.5rem;
+        margin-top: 0;
     }
 
     nav a {
@@ -35,13 +35,8 @@
         padding: 2rem;
     }
 
-    h1 {
-        font-size: 2.2rem;
-        margin-bottom: 2rem;
-    }
-
-    .temple-grid {
-        grid-template-columns: repeat(3, 1fr);
+    .gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 2rem;
     }
 

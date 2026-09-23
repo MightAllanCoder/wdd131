@@ -1,25 +1,27 @@
 ```javascript
-const today = new Date();
+const currentYear = document.querySelector("#current-year");
+const lastModified = document.querySelector("#last-modified");
 
-document.querySelector("#currentyear").textContent = today.getFullYear();
+if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+}
 
-document.querySelector("#lastModified").textContent =
-    `Last Modification: ${document.lastModified}`;
+if (lastModified) {
+    lastModified.textContent = new Date(document.lastModified).toLocaleDateString("en-GB");
+}
 
-const menuButton = document.querySelector("#menu");
-const navigation = document.querySelector("nav");
+const menuButton = document.querySelector("#menu-button");
+const navigation = document.querySelector("#navigation");
 
-menuButton.addEventListener("click", () => {
-    navigation.classList.toggle("open");
-
-    const menuOpen = navigation.classList.contains("open");
-
-    if (menuOpen) {
-        menuButton.textContent = "✕";
-        menuButton.setAttribute("aria-label", "Close navigation menu");
-    } else {
-        menuButton.textContent = "☰";
-        menuButton.setAttribute("aria-label", "Open navigation menu");
-    }
-});
+if (menuButton && navigation) {
+    menuButton.addEventListener("click", () => {
+        const isOpen = navigation.classList.toggle("open");
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+        menuButton.textContent = isOpen ? "✕" : "☰";
+        menuButton.setAttribute(
+            "aria-label",
+            isOpen ? "Close navigation menu" : "Open navigation menu"
+        );
+    });
+}
 ```

@@ -15,28 +15,35 @@ body {
 header {
     background-color: #1d3557;
     color: #ffffff;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 1rem;
-    text-align: center;
+    position: relative;
 }
 
-#site-title {
-    display: block;
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-#menu {
-    display: inline-block;
-    background: transparent;
-    border: none;
-    color: #ffffff;
+h1 {
+    margin: 0;
     font-size: 2rem;
+    text-align: center;
+    color: #1d3557;
+}
+
+#menu-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    border: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 1.8rem;
     cursor: pointer;
     padding: 0.25rem 0.5rem;
 }
 
-#menu:hover {
+#menu-button:hover {
     background-color: #457b9d;
     border-radius: 5px;
 }
@@ -44,8 +51,8 @@ header {
 nav {
     display: none;
     flex-direction: column;
-    align-items: center;
     gap: 0.5rem;
+    margin-top: 1rem;
 }
 
 nav.open {
@@ -53,15 +60,16 @@ nav.open {
 }
 
 nav a {
-    width: 100%;
     color: #ffffff;
     text-decoration: none;
     padding: 0.75rem 1rem;
     font-weight: 500;
     border-radius: 5px;
+    text-align: center;
 }
 
-nav a:hover {
+nav a:hover,
+nav a.active {
     background-color: #457b9d;
     text-decoration: underline;
 }
@@ -72,14 +80,13 @@ main {
     padding: 1.5rem 1rem;
 }
 
-h1 {
-    color: #1d3557;
+h2 {
     text-align: center;
-    margin: 0 0 1.5rem;
-    font-size: 2rem;
+    color: #1d3557;
+    margin-bottom: 1.5rem;
 }
 
-.temple-grid {
+.gallery {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -87,24 +94,25 @@ h1 {
 
 figure {
     margin: 0;
-    padding: 1rem;
     background-color: #ffffff;
     border-radius: 8px;
+    overflow: hidden;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    text-align: center;
 }
 
 figure img {
     display: block;
     width: 100%;
     height: auto;
-    border-radius: 5px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
 }
 
 figcaption {
     color: #1d3557;
     font-weight: 500;
-    padding-top: 0.8rem;
+    padding: 1rem;
+    text-align: center;
     line-height: 1.4;
 }
 
@@ -119,10 +127,6 @@ footer {
 footer p {
     margin: 0.5rem;
     line-height: 1.5;
-}
-
-#lastModified {
-    font-size: 0.9rem;
 }
 ```
 
