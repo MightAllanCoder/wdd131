@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="W05 Website Planning Document for WDD 131 Project">
+  <meta name="author" content="Allan Machingura">
+  <title>Website Planning Document | Tech & Security Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="project/styles/siteplan.css">
+</head>
+<body>
+  <header>
+    <h1>Website Planning Document</h1>
+    <h2>Tech & Security Hub</h2>
+  </header>
+
+  <main>
+    <!-- Site Name -->
+    <section>
+      <h3>1. Site Name</h3>
+      <p><strong>Name:</strong> Tech & Security Hub</p>
+      <p><strong>Reason for Name:</strong> This name directly reflects a central repository for commercial security solutions, smart equipment setups, and practical digital technology guides. It is memorable, clean, and describes the exact focus of the platform.</p>
+      <p><strong>Optional Domain:</strong> techsecurityhub.org</p>
+    </section>
+
+    <!-- Site Purpose -->
+    <section>
+      <h3>2. Site Purpose</h3>
+      <p>The site serves as a comprehensive resource hub for individuals and small businesses seeking reliable security camera specifications, network setup guides, and smart monitoring recommendations. It provides clear product comparisons, actionable installation checklists, and an inquiry contact form for tailored consultation services.</p>
+    </section>
+
+    <!-- Scenarios -->
+    <section>
+      <h3>3. Target Audience Scenarios</h3>
+      <ul>
+        <li><strong>Scenario 1:</strong> "What type of security camera setup is best suited for outdoor monitoring in high-temperature environments?"</li>
+        <li><strong>Scenario 2:</strong> "How do I request a custom product quote or technical consultation for my property?"</li>
+      </ul>
+    </section>
+
+    <!-- Color Schema -->
+    <section>
+      <h3>4. Color Schema</h3>
+      <p>This planning document dynamically demonstrates the selected site colors:</p>
+      <ul class="color-palette">
+        <li>
+          <span class="color-box primary-bg"></span>
+          <strong>Primary Color (#0a2540):</strong> Deep Navy Blue. Used for header backgrounds, footer backgrounds, major section headings, and primary navigation elements.
+        </li>
+        <li>
+          <span class="color-box secondary-bg"></span>
+          <strong>Secondary / Accent Color (#0073e6):</strong> Electric Blue. Used for call-to-action buttons, active link states, borders, and visual accents.
+        </li>
+        <li>
+          <span class="color-box neutral-bg"></span>
+          <strong>Neutral Light Background (#f4f6f8):</strong> Off-White / Soft Grey. Used for overall page background and card containers to ensure low eye strain and sharp text readability.
+        </li>
+      </ul>
+    </section>
+
+    <!-- Typography -->
+    <section>
+      <h3>5. Typography</h3>
+      <p>The site uses Google Fonts for a clean, modern aesthetic:</p>
+      <ul>
+        <li><strong class="heading-font-preview">Heading Font (Montserrat):</strong> Applied to all major headings (<code>&lt;h1&gt;</code> through <code>&lt;h3&gt;</code>) for structure and clarity.</li>
+        <li><span class="body-font-preview">Body Font (Open Sans):</span> Applied to body paragraphs, list items, navigation links, and standard input text for legibility across devices.</li>
+      </ul>
+    </section>
+
+    <!-- Wireframes -->
+    <section>
+      <h3>6. Wireframes</h3>
+      <p>Below are structural wireframe sketches for the homepage in mobile and desktop viewports:</p>
+      <div class="wireframe-container">
+        <figure>
+          <img src="../images/wireframe-mobile.jpg" alt="Mobile layout wireframe diagram showing stacked header, single column content, and footer" width="300">
+          <figcaption>Mobile View Layout</figcaption>
+        </figure>
+        <figure>
+          <img src="../images/wireframe-desktop.jpg" alt="Desktop layout wireframe diagram showing multi-column navigation, hero banner, content grid, and footer" width="500">
+          <figcaption>Desktop View Layout</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Allan Machingura | WDD 131</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script>
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+  </script>
+</body>
+</html>
