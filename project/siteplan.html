@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Allan Machingura">
+  <meta name="description" content="W05 website planning document for Tech & Security Hub">
+  <title>Website Planning Document | Tech &amp; Security Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&amp;family=Open+Sans:wght@400;600&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+  <header>
+    <h1>Website Planning Document</h1>
+    <h2>Tech &amp; Security Hub</h2>
+  </header>
+
+  <main>
+    <section>
+      <h3>1. Site Name and Purpose</h3>
+      <p><strong>Site name:</strong> Tech &amp; Security Hub</p>
+      <p>The name describes a central resource for practical technology and commercial security guidance. The site will help individuals and small businesses compare security cameras, plan networked monitoring systems, and choose smart equipment suited to their properties.</p>
+      <p>Services will include product specifications and comparisons, step-by-step setup guides, installation checklists, monitoring recommendations, and a contact form for custom quotes or technical consultations.</p>
+      <p><strong>Optional domain:</strong> techsecurityhub.org</p>
+    </section>
+
+    <section>
+      <h3>2. Audience Scenarios</h3>
+      <ul>
+        <li>What outdoor security camera setup will work reliably in a high-temperature environment?</li>
+        <li>How can I request a custom product quote or technical consultation for my property?</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>3. Color Schema</h3>
+      <p>The page uses a deep navy primary color, electric blue accent, and off-white background.</p>
+      <ul class="color-palette">
+        <li><span class="color-box primary-bg" aria-hidden="true"></span><span><strong>Primary: #0a2540</strong><br>Deep navy for the header, footer, and major headings.</span></li>
+        <li><span class="color-box secondary-bg" aria-hidden="true"></span><span><strong>Secondary: #0073e6</strong><br>Electric blue for accents, borders, and highlights.</span></li>
+        <li><span class="color-box neutral-bg" aria-hidden="true"></span><span><strong>Background: #f4f6f8</strong><br>Off-white for the page background.</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>4. Typography</h3>
+      <p><strong class="heading-font-preview">Montserrat</strong> (weights 600 and 700) is used for headings from <code>&lt;h1&gt;</code> through <code>&lt;h3&gt;</code>.</p>
+      <p><span class="body-font-preview"><strong>Open Sans</strong> (weights 400 and 600) is used for body text, lists, and captions.</span></p>
+    </section>
+
+    <section>
+      <h3>5. Wireframes</h3>
+      <p>Structural sketches for the proposed homepage at mobile and desktop widths.</p>
+      <div class="wireframe-container">
+        <figure>
+          <img src="images/wireframe-mobile.png" alt="Mobile homepage wireframe with a stacked header, single-column content, and footer" width="300">
+          <figcaption>Mobile View Layout</figcaption>
+        </figure>
+        <figure>
+          <img src="images/wireframe-desktop.png" alt="Desktop homepage wireframe with navigation, a hero area, content grid, and footer" width="500">
+          <figcaption>Desktop View Layout</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Allan Machingura | WDD 131</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script>
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+  </script>
+</body>
+</html>
