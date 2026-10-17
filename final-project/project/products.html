@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore our catalog of security cameras, smart sensors, and surveillance hardware at Tech & Security Hub.">
+  <meta name="author" content="Allan Machingura">
+  <title>Tech & Security Hub | Products</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">Tech & Security Hub</a>
+      <button id="menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">Products & Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="siteplan.html">Site Plan</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Our Security Products</h1>
+      <p>Filter our hardware catalog by category to find the right monitoring solution for your property.</p>
+    </section>
+
+    <!-- Interactive JS Filter Controls -->
+    <section class="filter-controls">
+      <button class="filter-btn active" data-category="all">All Products</button>
+      <button class="filter-btn" data-category="camera">Cameras</button>
+      <button class="filter-btn" data-category="recorder">Recorders</button>
+      <button class="filter-btn" data-category="accessory">Accessories</button>
+    </section>
+
+    <!-- Dynamic JavaScript Render Target -->
+    <section id="product-grid" class="products-container">
+      <!-- Generated dynamically by main.js -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; <span id="currentyear"></span> | Allan Machingura | WDD 131</p>
+      <p id="lastModified"></p>
+      <p><a href="references.html">References & Citations</a></p>
+    </div>
+  </footer>
+</body>
+</html>

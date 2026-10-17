@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with Tech & Security Hub for product quotations, technical consultations, and installation services.">
+  <meta name="author" content="Allan Machingura">
+  <title>Tech & Security Hub | Contact Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/project.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <a href="index.html" class="logo">Tech & Security Hub</a>
+      <button id="menu-toggle" aria-label="Toggle Navigation Menu">&#9776;</button>
+      <nav id="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products & Services</a></li>
+          <li><a href="contact.html" class="active">Contact Us</a></li>
+          <li><a href="siteplan.html">Site Plan</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h1>Request a Quotation & Consultation</h1>
+      <p>Fill out the form below and our security integration team will reach out with a tailored proposal.</p>
+
+      <form id="contact-form" method="get" action="contact.html">
+        <label for="fullname">Full Name <span class="required">*</span></label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+
+        <label for="email">Email Address <span class="required">*</span></label>
+        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+
+        <label for="phone">Phone Number <span class="required">*</span></label>
+        <input type="tel" id="phone" name="phone" placeholder="+263 77 000 0000" required>
+
+        <label for="service">Inquiry Type <span class="required">*</span></label>
+        <select id="service" name="service" required>
+          <option value="" disabled selected>Select a Service ...</option>
+          <option value="installation">Full Security Installation</option>
+          <option value="quote">Hardware Product Quote</option>
+          <option value="maintenance">System Maintenance & Support</option>
+        </select>
+
+        <fieldset>
+          <legend>Property Type <span class="required">*</span></legend>
+          <label><input type="radio" name="property" value="commercial" required> Commercial / Office</label>
+          <label><input type="radio" name="property" value="residential" required> Residential / Private</label>
+          <label><input type="radio" name="property" value="industrial" required> Industrial / Warehouse</label>
+        </fieldset>
+
+        <label for="message">Project Requirements / Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us about your surveillance needs..."></textarea>
+
+        <input type="submit" value="Submit Inquiry" class="btn-primary submit-btn">
+      </form>
+
+      <div id="form-response" class="form-feedback hidden"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <p>&copy; <span id="currentyear"></span> | Allan Machingura | WDD 131</p>
+      <p id="lastModified"></p>
+      <p><a href="references.html">References & Citations</a></p>
+    </div>
+  </footer>
+</body>
+</html>

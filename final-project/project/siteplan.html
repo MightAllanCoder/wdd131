@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Planning document for Tech & Security Hub, including its purpose, audience, color palette, typography, and responsive wireframes.">
+  <meta name="author" content="Allan Machingura">
+  <title>Website Planning Document | Tech & Security Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+<body>
+  <header>
+    <h1>Website Planning Document</h1>
+    <h2>Tech & Security Hub</h2>
+  </header>
+
+  <main>
+    <section>
+      <h3>1. Site Name</h3>
+      <p><strong>Name:</strong> Tech & Security Hub</p>
+      <p><strong>Reason for Name:</strong> This name reflects a central source for commercial security equipment, product comparisons, and practical consultation services.</p>
+    </section>
+
+    <section>
+      <h3>2. Site Purpose</h3>
+      <p>The site helps individuals and small businesses compare security cameras, recording equipment, and accessories, then request product quotes, installation, or technical consultation.</p>
+    </section>
+
+    <section>
+      <h3>3. Target Audience Scenarios</h3>
+      <ul>
+        <li><strong>Scenario 1:</strong> "Which camera or recording equipment fits my property's security needs, and what features does each product offer?"</li>
+        <li><strong>Scenario 2:</strong> "How do I request a custom product quote or technical consultation for my property?"</li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>4. Color Schema</h3>
+      <p>Deep Navy Blue for headers and footers, Electric Blue for accents, and Off-White for page backgrounds.</p>
+      <ul class="color-palette" aria-label="Site color palette">
+        <li><span class="swatch swatch-primary" aria-hidden="true"></span><span><strong>Deep Navy Blue</strong><br>#0a2540</span></li>
+        <li><span class="swatch swatch-secondary" aria-hidden="true"></span><span><strong>Electric Blue</strong><br>#0073e6</span></li>
+        <li><span class="swatch swatch-background" aria-hidden="true"></span><span><strong>Off-White</strong><br>#f4f6f8</span></li>
+      </ul>
+    </section>
+
+    <section>
+      <h3>5. Typography</h3>
+      <p>Montserrat for major headings and Open Sans for standard body copy.</p>
+    </section>
+
+    <section>
+      <h3>6. Wireframes</h3>
+      <div class="wireframe-container">
+        <figure>
+          <img src="images/wireframe-mobile.jpg" alt="Mobile layout wireframe" width="300" loading="lazy">
+          <figcaption>Mobile View Layout</figcaption>
+        </figure>
+        <figure>
+          <img src="images/wireframe-desktop.jpg" alt="Desktop layout wireframe" width="500" loading="lazy">
+          <figcaption>Desktop View Layout</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> | Allan Machingura | WDD 131</p>
+    <p id="lastModified"></p>
+  </footer>
+
+  <script>
+    document.getElementById("currentyear").textContent = new Date().getFullYear();
+    document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+  </script>
+</body>
+</html>
