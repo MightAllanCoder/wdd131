@@ -1,0 +1,139 @@
+:root {
+  --primary-color: #004d40;
+  --accent-color: #00796b;
+  --bg-color: #f4f6f8;
+  --text-color: #212121;
+  --border-color: #ccc;
+  --required-color: #d32f2f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+main {
+  flex: 1;
+  max-width: 600px;
+  width: 90%;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+label, legend {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.required {
+  color: var(--required-color);
+}
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid var(--accent-color);
+}
+
+fieldset {
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+fieldset label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+.stars {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.stars label {
+  font-size: 1.1rem;
+}
+
+.submit-btn, .back-link {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.9rem;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover, .back-link:hover {
+  background-color: var(--accent-color);
+}
+
+.confirmation-container {
+  text-align: center;
+}
+
+.counter-box {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: #e0f2f1;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
