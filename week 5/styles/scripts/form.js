@@ -10,6 +10,7 @@ const products = [
 // Populate Select Dropdown dynamically
 document.addEventListener("DOMContentLoaded", () => {
   const selectElement = document.getElementById("productName");
+  const formElement = document.querySelector("form");
 
   if (selectElement) {
     products.forEach((product) => {
@@ -17,6 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
       option.value = product.id; // Product ID used for option value
       option.textContent = product.name; // Display name
       selectElement.appendChild(option);
+    });
+  }
+
+  if (formElement) {
+    formElement.addEventListener("submit", () => {
+      localStorage.setItem("reviewPending", "true");
     });
   }
 
